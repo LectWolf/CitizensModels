@@ -97,7 +97,7 @@ public class ModelEngineV4 implements IModelEngine {
 
     @Override
     public @NotNull List<String> getOrderedModelIds() {
-        return ModelEngineAPI.getAPI().getModelRegistry().getOrderedId();
+        return (List<String>) ModelEngineAPI.getAPI().getModelRegistry().getOrderedId();
     }
 
     @Override
